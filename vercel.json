@@ -3,7 +3,10 @@
   "routes": [
       {
         "src": "/gdcucc/(.*).m3u8",
-        "dest": "http://159.75.85.63:5680/gdcucc.php?id=$1"
+        "status": 301,
+        "headers": {
+          "Location": "http://159.75.85.63:5680/gdcucc.php?id=$1"
+        }
       }
   ]
 }
